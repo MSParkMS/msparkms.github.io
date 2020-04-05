@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Markdown 문법 기초"
-date:   2020-04-05 01:07:08 +0900
+title: "Markdown 문법 기초"
+date: 2020-04-05 01:07:08 +0900
+categories: [Blog]
 ---
 
 # Markdown 문법 기초
