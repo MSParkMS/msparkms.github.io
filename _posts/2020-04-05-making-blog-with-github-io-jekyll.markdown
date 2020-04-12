@@ -51,6 +51,8 @@ categories: [Blog]
     3. 기본적으로 _post에 만들어져있는 markdown을 내 post로 변경해준다.
         * YEAR-MONTH-DAY-Title.markdown 이름으로 파일을 만들어야 한다.
         * 미래 시점의 날짜를 입력할 경우 따로 옵션을 주지 않는 한은 빌드가 되지 않는다.
+    4. Jekyll에 기본 지식은 아래 링크를 통해 알아보자!
+        * [참고 사이트](https://jekyllrb-ko.github.io/docs/step-by-step/01-setup/)
 <p></p>
 * 카테고리 추가
     1. _layouts 폴더 추가
