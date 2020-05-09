@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "An Introduction to Python & Algorithms 01"
 date: 2020-04-07 00:19:10 +0900
 categories: [Python]

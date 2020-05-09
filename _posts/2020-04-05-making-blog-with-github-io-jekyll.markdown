@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Github.io + Jekyll로 블로그 만들기"
 date: 2020-04-05 13:38:08 +0900
 categories: [Blog]

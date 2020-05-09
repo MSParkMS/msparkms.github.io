@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Liquid 문법 기초"
 date: 2020-04-12 05:57:04 +0900
 categories: [Blog]

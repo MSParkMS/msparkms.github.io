@@ -1,0 +1,18 @@
+I"�<h1 id="an-introduction-to-python--algorithms-01">An Introduction to Python &amp; Algorithms 01</h1>
+<h2 id="개요">개요</h2>
+<ul>
+  <li>Python을 공부하고 싶다.</li>
+  <li>LeetCode와 같은 알고리즘 문제 풀이도 하고 싶다.</li>
+  <li>이 두개를 동시에 진행하기에 딱 좋은 책이 있어서 공부해보려고 한다.
+    <ul>
+      <li><a href="https://github.com/bt3gl/Book_on_Python_Algorithms_and_Data_Structure">An Introduction to Python &amp; Algorithms</a></li>
+    </ul>
+  </li>
+  <li>이 방식이 완벽하게 Python 문법을 익히기는 어려울 수 있지만 시작을 이렇게 하고 중간에 막히는 부분을 공부해도 될듯하다.</li>
+  <li>실행은 로컬에서 Python 코드를 실행해도 되고 온라인으로 해도 된다.
+    <ul>
+      <li><a href="https://ide.geeksforgeeks.org/">geeksforgeeks</a></li>
+    </ul>
+  </li>
+</ul>
+:ET

@@ -1,0 +1,251 @@
+I"�<h1 id="markdown-문법-기초">Markdown 문법 기초</h1>
+
+<h2 id="개요">개요</h2>
+<ul>
+  <li>GitHub IO에 블로그를 만들었기 때문에 마크다운에 익숙해져야 한다.</li>
+  <li><a href="https://github.github.com/gfm/" title="github flavored markdown spec">GFM</a>를 기준으로 간단하게 사용할 만큼만 정리해보자.</li>
+</ul>
+
+<h2 id="헤더">헤더</h2>
+<ul>
+  <li>글머리 - 6단계 지원
+    <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  # This is the h1
+  ## This is the h2
+  ### This is the h3
+  #### This is the h4
+  ##### This is the h5
+  ###### This is the h6
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h1 id="this-is-the-h1">This is the h1</h1>
+<h2 id="this-is-the-h2">This is the h2</h2>
+<h3 id="this-is-the-h3">This is the h3</h3>
+<h4 id="this-is-the-h4">This is the h4</h4>
+<h5 id="this-is-the-h5">This is the h5</h5>
+<h6 id="this-is-the-h6">This is the h6</h6>
+
+<h2 id="블록인용">블록인용</h2>
+<ul>
+  <li><code class="highlighter-rouge">&gt;</code> 블럭인용문자를 사용
+    <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gt">  &gt; This is a quote1</span>
+<span class="gt">  &gt; &gt; This is a quote2</span>
+<span class="gt">  &gt; &gt; &gt; This is a quote3</span>
+</code></pre></div>    </div>
+    <blockquote>
+      <p>This is a quote1</p>
+      <blockquote>
+        <p>This is a quote2</p>
+        <blockquote>
+          <p>This is a quote3</p>
+        </blockquote>
+      </blockquote>
+    </blockquote>
+  </li>
+</ul>
+
+<h2 id="리스트">리스트</h2>
+<ul>
+  <li>숫자 리스트 (숫자를 나열)</li>
+</ul>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">  1.</span> description1
+<span class="p">  2.</span> description2
+<span class="p">  3.</span> description3
+</code></pre></div></div>
+
+<ol>
+  <li>description1</li>
+  <li>description2</li>
+  <li>description3</li>
+</ol>
+
+<ul>
+  <li>기호 리스트(<code class="highlighter-rouge">*</code>, <code class="highlighter-rouge">+</code>, <code class="highlighter-rouge">-</code>)</li>
+</ul>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">  *</span> description1
+<span class="p">    *</span> description1-1
+<span class="p">      *</span> description1-1-1
+</code></pre></div></div>
+
+<ul>
+  <li>description1
+    <ul>
+      <li>description1-1
+        <ul>
+          <li>description1-1-1</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="코드-블럭">코드 블럭</h2>
+<ul>
+  <li>코드 블럭 기호 사용법 (```)</li>
+</ul>
+<pre><code>
+  ```CPP (highlighting을 적용하고자 하는 언어)
+    printf("Hello World!\n");
+  ```
+</code></pre>
+
+<pre><code class="language-CPP">  printf("Hello World!\n");
+</code></pre>
+
+<ul>
+  <li>인라인 코드 블럭 (`)
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>`인라인 코드`
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p><code class="highlighter-rouge">인라인 코드</code></p>
+
+<h2 id="수평선-추가">수평선 추가</h2>
+<ul>
+  <li>다양한 방법이 가능
+    <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gh">***
+---
+</span></code></pre></div>    </div>
+  </li>
+</ul>
+
+<hr />
+<hr />
+
+<h2 id="링크-추가">링크 추가</h2>
+<ul>
+  <li>외부 링크
+    <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Link : <span class="p">[</span><span class="nv">GFM</span><span class="p">](</span><span class="sx">https://github.github.com/gfm/</span> <span class="nn">"github flavored markdown spec"</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>Link : <a href="https://github.github.com/gfm/" title="github flavored markdown spec">GFM</a></p>
+
+<ul>
+  <li>내부 링크
+    <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"Title"</span><span class="nt">&gt;</span>제목<span class="nt">&lt;/div&gt;</span>
+<span class="p">[</span><span class="nv">제목</span><span class="p">](</span><span class="sx">#Title</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="강조">강조</h2>
+<ul>
+  <li>볼드, 이탤릭, 취소등 다양한 강조 기능 제공
+    <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="ge">*이탤릭*</span>
+<span class="ge">_이탤릭_</span>
+<span class="gs">**볼드**</span>
+<span class="gs">__볼드__</span>
+~~취소~~
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p><em>이탤릭</em> <br />
+<em>이탤릭</em> <br />
+<strong>볼드</strong> <br />
+<strong>볼드</strong> <br />
+<del>취소</del></p>
+
+<ul>
+  <li>원하는 색상 넣기
+    <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>원하는 <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"color:red"</span><span class="nt">&gt;</span>색상<span class="nt">&lt;/span&gt;</span> 넣기
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>원하는 <span style="color:red">색상</span> 넣기</p>
+
+<h2 id="줄-바꿈">줄 바꿈</h2>
+<ul>
+  <li>뒤에 띄어쓰기 3칸이상을 넣어준다.
+    <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>뒤에 띄어쓰기 없음
+줄 바꿈 테스트
+
+뒤에 띄어쓰기 3칸   
+줄 바꿈 테스트
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>뒤에 띄어쓰기 없음
+줄 바꿈 테스트</p>
+
+<p>뒤에 띄어쓰기 3칸 <br />
+줄 바꿈 테스트</p>
+
+<h2 id="이미지-첨부">이미지 첨부</h2>
+<ul>
+  <li>파일 혹은 링크를 걸면 된다.
+    <ul>
+      <li>사이즈 변경등은 img 태그를 이용</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">![</span><span class="nv">이름</span><span class="p">](</span><span class="sx">url,</span> <span class="nn">"제목"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="표-만들기">표 만들기</h2>
+<ul>
+  <li>테이블 생성
+    <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Header1 | Header2
+------- | -------
+Content1 | Content2
+Content3 | Content4
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Header1</th>
+      <th>Header2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Content1</td>
+      <td>Content2</td>
+    </tr>
+    <tr>
+      <td>Content3</td>
+      <td>Content4</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>테이블 정렬
+    <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>| Col1 | Col2 | Col3 | Col4 |
+| ---  | :--- | :---:| ---: |
+| Default | Left | Center | Right |
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Col1</th>
+      <th style="text-align: left">Col2</th>
+      <th style="text-align: center">Col3</th>
+      <th style="text-align: right">Col4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Default</td>
+      <td style="text-align: left">Left</td>
+      <td style="text-align: center">Center</td>
+      <td style="text-align: right">Right</td>
+    </tr>
+  </tbody>
+</table>
+:ET

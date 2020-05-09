@@ -1,0 +1,76 @@
+I"?<h1 id="liquid-문법-기초">Liquid 문법 기초</h1>
+<h2 id="liquid">Liquid</h2>
+<ul>
+  <li>Jekyll을 잘 활용하려면 Liquid 문법을 알아둘 필요가 있다.</li>
+  <li>그래야 내 마음대로 커스텀하게 사용할 수 있다.</li>
+</ul>
+
+<h2 id="문법-기초">문법 기초</h2>
+<ul>
+  <li>
+    <p><a href="https://jekyllrb-ko.github.io/docs/step-by-step/02-liquid/">참고 사이트</a></p>
+  </li>
+  <li>
+    <p>맨 위에 — / — 로 머리말부분을 만들어주어야 동작한다.</p>
+    <ul>
+      <li>머리말에 추가해준 변수는 page를 통해 접근할 수 있다.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="오브젝트">오브젝트</h3>
+
+<ul>
+  <li>컨텐츠를 어디에 출력할 것인가를 알려준다. {{ }} 를 이용한다.
+    <div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{{</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">title</span><span class="w"> </span><span class="p">}}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>테스트
+    <ul>
+      <li>Liquid 문법 기초</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="태그">태그</h3>
+
+<ul>
+  <li>탬플릿의 논리 연산과 흐름을 제어한다. {% %} 를 이용한다.
+    <div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">page</span><span class="p">.</span><span class="nv">show_sidebar</span><span class="w"> </span><span class="p">%}</span>
+  &lt;div class="sidebar"&gt;
+      sidebar content
+  &lt;/div&gt;
+<span class="p">{%</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>참고로 코드블럭등 안에서도 liquid 문법이 동작한다.
+    <ul>
+      <li>
+        <p>그래서 liquid 문법이 동작하지 않기를 원한다면 그 사이에 태그를 추가해야 한다.</p>
+      </li>
+      <li>
+        <p>{% %} -&gt; raw / endraw</p>
+      </li>
+      <li>
+        <p>이 부분도 이쁘게 나타낼 수 있을 것 같은데 아직은 잘 모르곘음</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="필터">필터</h3>
+
+<ul>
+  <li>liquid 오브젝트의 출력을 변화시킨다. | 를 이용한다.
+    <div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{{</span><span class="w"> </span><span class="s2">"hi"</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">capitalize</span><span class="w"> </span><span class="p">}}</span>
+<span class="p">{{</span><span class="w"> </span><span class="s2">"Hello World!"</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nf">downcase</span><span class="w"> </span><span class="p">}}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>테스트
+    <ul>
+      <li>Hi</li>
+      <li>hello world!</li>
+    </ul>
+  </li>
+</ul>
+:ET
